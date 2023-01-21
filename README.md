@@ -24,3 +24,13 @@ git init
 dvc init
 
 dvc add data_given/winequality.csv
+
+git add .
+
+git commit -m "first commit"
+
+git add . && git commit -m "update Readme.md"
+
+git remote add origin https://github.com/praj2408/simple-dvc-demo.git
+git branch -M main
+git push origin main
