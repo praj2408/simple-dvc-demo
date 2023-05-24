@@ -1,6 +1,10 @@
+# third-party install
 dvc
 dvc[gdrive]
 scikit-learn
 pandas
 pytest
 tox
+
+#local package install
+-e .
