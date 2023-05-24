@@ -1,10 +1,14 @@
-def square(n: float) -> float:
-    """Square a number."""
-    return n**2
+import pytest
 
-def test_square():
-    # When
-    subject = square(4)
+class NotInRange(Exception):
+    def __inti__(self, message="value not in range"):
+        self.message = message
+        super.__init__(self.message)
 
-    # Then
-    assert subject == 16
+
+def test_generic():
+    a = 5
+    with pytest.raises(NotInRange):
+        if a not in range(10, 20):
+            raise NotInRange
+
