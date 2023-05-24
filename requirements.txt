@@ -5,6 +5,7 @@ scikit-learn
 pandas
 pytest
 tox
+Flask
 
 #local package install
 -e .
