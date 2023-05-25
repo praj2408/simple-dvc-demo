@@ -5,7 +5,9 @@ scikit-learn
 pandas
 pytest
 tox
-Flask
+flake8
+flask
+gunicorn
 
 #local package install
 -e .
