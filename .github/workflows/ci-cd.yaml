@@ -32,7 +32,7 @@ jobs:
         pytest -v
         
     - name: Deploy to Render
-      uses: simple-dvc-demo/render-action@0.6.0
+      uses: wineq-mlops/render-action@0.6.0
       with:
         render-token: ${{ secrets.RENDER_TOKEN }}
         service-id: srv-chnrsd82qv207f3cu420?key=WVq2PWkx95w
