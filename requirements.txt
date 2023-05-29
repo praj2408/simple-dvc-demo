@@ -9,6 +9,7 @@ flake8
 flask
 gunicorn
 pyyaml
+mlflow
 
 #local package install
 -e .
