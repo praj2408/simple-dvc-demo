@@ -4,6 +4,7 @@ import json
 import joblib
 import numpy as np
 
+
 params_path = "params.yaml"
 schema_path = os.path.join("prediction_service", "schema_in.json")
 
@@ -82,4 +83,11 @@ def api_response(dict_request):
         response = {"the_exected_range": get_schema(), "response": str(e) }
         return response
 
+    except NotInCols as e:
+        response = {"the_exected_cols": get_schema().keys(), "response": str(e) }
+        return response
 
+
+    except Exception as e:
+        response = {"response": str(e) }
+        return response
